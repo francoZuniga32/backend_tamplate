@@ -1,0 +1,23 @@
+"use strict";
+const { Model } = require("sequelize");
+module.exports = (sequelize, DataTypes) => {
+  class Usuarios extends Model {}
+  Usuarios.init(
+    {
+      nombreusuario: { type: DataTypes.STRING },
+      email: { type: DataTypes.STRING },
+      contrasenia: { type: DataTypes.STRING },
+      foto: { type: DataTypes.STRING },
+      token: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV1,
+      },
+      validado: DataTypes.BOOLEAN
+    },
+    {
+      sequelize,
+      modelName: "Usuarios",
+    }
+  );
+  return Usuarios;
+}
