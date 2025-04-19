@@ -3,10 +3,7 @@ const jwt = require("jsonwebtoken");
 const { DataTypes } = require("sequelize");
 const sequelize = require("../../database/index");
 const Usuario = require("../../database/models/usuarios")(sequelize, DataTypes);
-const Vendedor = require("../../database/models/vendedores")(
-  sequelize,
-  DataTypes
-);
+
 
 module.exports = async (req, res) => {
   if (req.body.email && req.body.contrasenia) {
@@ -14,7 +11,7 @@ module.exports = async (req, res) => {
       const result = await sequelize.transaction(async (t) => {
         var usuario = await Usuario.findOne(
           {
-            attributes: ["id", "nombreusuario", "email", "foto", "contrasenia"],
+            attributes: ["id", "nombreusuario", "email", "contrasenia"],
             where: {
               email: req.body.email,
               contrasenia: req.body.contrasenia,

@@ -11,8 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       token: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV1,
-      },
-      validado: DataTypes.BOOLEAN
+      }
     },
     {
       sequelize,

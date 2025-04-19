@@ -8,7 +8,6 @@ const Usuario = require("../../database/models/usuarios")(sequelize, DataTypes);
 
 module.exports = async (req, res) => {
     if (
-      req.body.productor != null &&
       req.body.nombre &&
       req.body.email &&
       req.body.contrasenia
@@ -31,7 +30,6 @@ module.exports = async (req, res) => {
                 nombreusuario: req.body.nombre,
                 email: req.body.email,
                 contrasenia: req.body.contrasenia,
-                validado: false,
                 createdAt: new Date(),
                 updatedAt: new Date()
               },
