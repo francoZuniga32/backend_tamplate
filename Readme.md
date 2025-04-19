@@ -21,3 +21,19 @@ Tengo el presentimiento de que este proyecto crecera mucho, espero que pueda ser
 
 Puedes instalar todo lo necesario haciendo `npm i` para esto tiene que tener instalado la ultima version de nodejs, y de npm.
 Luego puede ejecutar el comando `npm run dev` y modificar tu app a tu gusto.
+
+## Filosofia
+
+La filosofia de este repositorio es que el codigo sea lo minimo e indispensable para que se pueda comenzar a desarrollar una api rest y esto es:
+- uso de una base de datos usando un orm
+- autenticacion por parte de agentes externos (app webs, app moviles, bots, ia, etc).
+- permitir limitar el acceso de origenes determinados (CORS).
+- poder relizar la carga de archivos y su visualizacion desde diferentes aplicaciones (app web y moviles).
+- autenticacion con paginas externas (google, facebook, github, etc).
+
+Podriamos tambien agregar la generacion de reportes y demas pero esto se me hace demaciadas funcionalidades a una api rest. Son cosas que se pueden desarrollar desde una app web y o movil (cosa que no veo necesaria) y lo unico que hacen es complejisar un codigo que tiene que ser simplemente el paso intermedio entre la parte visual y la base de datos siguiente el patron MVC (Modelo Vista Controlador) enfocando la API REST en el controlador. 
+
+Si crees que este repositorio sirve como plantilla y quieres extenderlo mas puedes hacer un fork, y extenderlo como te plazca (es lo bonito del codiglo libre), espero que esto te sirva en tus proyectos o trabajo.
+
+Abrazos 😘.
+ 
