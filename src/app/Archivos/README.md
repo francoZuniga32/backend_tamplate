@@ -3,7 +3,7 @@
 Usaremos multer para subir los archivos en este template.
 
 La filosofia es la siguiente:
-- los archivos son subidos a la carpeta publica que son accedidos desde http://localhost:3000/static/
+- los archivos son subidos a la carpeta publica que son accedidos desde http://localhost:3000/public/carpeta/id/archivo ej: http://localhost:3000/public/imagen/1/579204952ee59797ac24822ce3ab7f4e6b0541c6.png
 - los archivos pueden ser colocados en diferentes carpetas pero siempre en la carpeta public.
 - los archivos tienen que ir dentro de una carpeta que los identifique por eso pasamos el id. esto es comun cuando adjuntamos imagenes con algun tipo de entidad ej:
   - clientes/1/dni.png
