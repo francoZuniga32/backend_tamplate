@@ -7,8 +7,7 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [x] Registro de usuario
   - [x] Autenticacion de usuario
 - [x] Json Web Token para autenticar rutas
-- [ ] API de carga de archivos
-- [ ] API de consulta de archivos
+- [x] API de carga de archivos (como esta retorna el file name podemos reconstruir la ruta)
 - [ ] OAUTH con otros servicios (google, facebook, etc)
 - [ ] Feature Flags - poder deshabilitar APIS en caso de que no se las requiera
 - [ ] Dockerfile para poder desplegarlo sensillamente
