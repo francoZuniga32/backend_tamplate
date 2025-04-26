@@ -1,7 +1,35 @@
 # Auth - OAuth
-Tenemos soporte a diferentes estrategias de autenticacion por medio se servicios externos, uno de esos servicios es github. 
 
-Para poder autenticarnos tenemos que acceder a la ruta http://localhost:3000/auth/github
-esto nos pedira nuestro usuario de github y luego redireccionara a http://localhost:3000/auth/github/callback donde generaremos el token jwt para poder ser usado desde cualquier aplicacion.
+Contamos con soporte para diferentes estrategias de autenticación mediante servicios externos.
 
-El token generado estara en las cookies del navegador ya que redireccionamos a una ruta de una web frontend configurada en las variables de entorno.
+Usaremos los siguientes métodos de autenticación externos:
+- GitHub  
+- Google
+
+## GitHub
+
+Para autenticarnos, debemos acceder a la ruta:  
+`http://localhost:3000/auth/github`
+
+Esto nos pedirá iniciar sesión con nuestro usuario de GitHub y luego redirigirá a:  
+`http://localhost:3000/auth/github/callback`,  
+donde se generará un token JWT que podrá ser utilizado desde cualquier aplicación.
+
+El token generado estará disponible en las cookies del navegador, ya que se realiza una redirección a una ruta del frontend configurada mediante las variables de entorno.
+
+## Google
+
+Para usar autenticación con Google, es necesario obtener el `client_id` y el `client_secret`. Para ello, accede al siguiente enlace:  
+[https://console.cloud.google.com/auth/clients](https://console.cloud.google.com/auth/clients)  
+y luego agrega estos valores al archivo `.env`.
+
+Una vez configurado, puedes autenticarte accediendo a la ruta:  
+`http://localhost:3000/auth/google`
+
+Esto solicitará nuestro usuario de Google y, al finalizar, redirigirá a:  
+`http://localhost:3000/auth/google/callback`,  
+donde se generará el token JWT para ser utilizado desde cualquier aplicación.
+
+El token también se almacenará en las cookies del navegador.
+
+> **Importante:** Asegúrate de que tu aplicación web no sobrescriba las cookies del navegador, de lo contrario, no tendrás acceso al JWT.
