@@ -16,8 +16,10 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [ ] Consulta N:1 N:M
 - [ ] OAUTH con otros servicios (google, facebook, etc)
   - [ ] Google
-  - [ ] Github  
+  - [x] Github
+  - [ ] Distingir entre datos de usuario (nombre ,etc) y la estrateguia usada   
 - [ ] Feature Flags - poder deshabilitar APIS en caso de que no se las requiera
+  - [ ] Configurar un archivo json o .env para las diferentes funciones habilitadas-deshabilitadas.  
 - [ ] Dockerfile para poder desplegarlo sensillamente
 - [ ] Dockercompose para poder levantar los servicios  
 
