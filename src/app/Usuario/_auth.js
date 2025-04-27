@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
       const result = await sequelize.transaction(async (t) => {
         var usuario = await Usuario.findOne(
           {
-            attributes: ["id", "nombreusuario", "email", "contrasenia"],
+            attributes: ["id", "nombreusuario", "email", "contrasenia", "rol"],
             where: {
               email: req.body.email,
               contrasenia: req.body.contrasenia,

@@ -33,12 +33,15 @@ app.set("public", path.join(__dirname, "public"));
 app.use("/public", express.static(app.get("public")));
 
 //middlewares 
-app.use("/prueba/", require("./middleware/auth"));
+app.use("/prueba", require("./middleware/auth"));
 
 app.use('/usuario', require('./app/Usuario/ruta'));
+
 app.use('/prueba', require("./app/Prueba/ruta"));
+
 app.use('/archivo', require('./app/Archivos/ruta'));
 app.use('/auth', require('./app/Auth/ruta'));
+app.use('/carrera', require('./app/Carreras/ruta'));
 
 app.listen(app.get("PORT"), () => {
     console.log("listen to port " + app.get("PORT"));

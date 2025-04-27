@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       email: { type: DataTypes.STRING },
       contrasenia: { type: DataTypes.STRING },
       foto: { type: DataTypes.STRING },
+      rol: {type: DataTypes.STRING},
       token: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV1,
@@ -18,5 +19,6 @@ module.exports = (sequelize, DataTypes) => {
       modelName: "Usuarios",
     }
   );
+
   return Usuarios;
 }

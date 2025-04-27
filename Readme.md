@@ -7,7 +7,10 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [x] Registro de usuario
   - [x] Autenticacion de usuario
 - [x] Json Web Token para autenticar rutas
+  - [x] Permisos por EP.
 - [x] API de carga de archivos (como esta retorna el file name podemos reconstruir la ruta)
+- [ ] API de carga de archivos segura ( sin usar static() y validando con tokens ).
+- [x] Middleware para validar esquemas de datos en el body.
 - [ ] Ejemplos de uso de sequelize.
   - [ ] Insercion
   - [ ] Actualizacion
@@ -15,11 +18,15 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [ ] Consulta
   - [ ] Consulta N:1 N:M
 - [ ] OAUTH con otros servicios (google, facebook, etc)
-  - [ ] Google
+  - [x] Google
   - [x] Github
-  - [ ] Distingir entre datos de usuario (nombre ,etc) y la estrateguia usada   
+  - [ ] Distingir entre datos de usuario (nombre ,etc) y la estrategia usada
+- [ ] Envio de emails
+  - [ ] Template html.
+  - [ ] Validarion con email.
+  - [ ] Recuperacion de contraseña.
 - [ ] Feature Flags - poder deshabilitar APIS en caso de que no se las requiera
-  - [ ] Configurar un archivo json o .env para las diferentes funciones habilitadas-deshabilitadas.  
+  - [ ] Configurar un archivo json o .env para las diferentes funciones habilitadas-deshabilitadas.
 - [ ] Dockerfile para poder desplegarlo sensillamente
 - [ ] Dockercompose para poder levantar los servicios  
 
