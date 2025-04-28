@@ -15,7 +15,6 @@ controlador.authCallbackGoogle = async(req, res) => {
         httpOnly: true, // si quieres leerla desde JS (no recomendado para JWTs)
         sameSite: 'None' // para permitir cross-site cookies
       });
-    console.log(req.user);
     res.redirect(process.env.FRONT_POST_LOGIN_URL);
 }
 

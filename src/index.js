@@ -42,6 +42,8 @@ app.use('/prueba', require("./app/Prueba/ruta"));
 app.use('/archivo', require('./app/Archivos/ruta'));
 app.use('/auth', require('./app/Auth/ruta'));
 app.use('/carrera', require('./app/Carreras/ruta'));
+app.use('/materia', require("./app/Materias/ruta"));
+app.use('/correlativas', require("./app/Correlativas/ruta"));
 
 app.listen(app.get("PORT"), () => {
     console.log("listen to port " + app.get("PORT"));

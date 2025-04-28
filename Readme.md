@@ -12,11 +12,12 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
 - [ ] API de carga de archivos segura ( sin usar static() y validando con tokens ).
 - [x] Middleware para validar esquemas de datos en el body.
 - [ ] Ejemplos de uso de sequelize.
-  - [ ] Insercion
-  - [ ] Actualizacion
-  - [ ] Eliminacion
-  - [ ] Consulta
-  - [ ] Consulta N:1 N:M
+  - [x] Insercion
+  - [x] Actualizacion
+  - [x] Eliminacion
+  - [x] Consulta
+  - [x] Consulta N:1 N:M
+  - [ ] Documentacion de sequelize
 - [ ] OAUTH con otros servicios (google, facebook, etc)
   - [x] Google
   - [x] Github

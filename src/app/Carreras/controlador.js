@@ -2,7 +2,9 @@ const controlador = {};
 const sequelize = require('../../database/index');
 const {DataTypes} = require('sequelize');
 const Carrera = require('../../database/models/carrera')(sequelize, DataTypes);
+const Materias = require('../../database/models/materia')(sequelize, DataTypes);
 
+Carrera.hasMany(Materias,{as: 'tieneMaterias', foreignKey: 'idCarrera', sourceKey: 'id'});
 
 controlador.todas = async(req, res)=>{
     res.send(await Carrera.findAll());
@@ -12,7 +14,13 @@ controlador.una = async(req, res)=>{
     res.send(await Carrera.findOne({
         where:{
             id: parseInt(req.params.id)
-        }
+        },
+        include:[
+            {
+                model: Materias,
+                as: 'tieneMaterias'
+            }
+        ]
     }));
 }
 
@@ -50,6 +58,7 @@ controlador.eliminar = async(req, res)=>{
             id: parseInt(req.params.id)
         }
     }));
+
 }
 
 module.exports = controlador;
