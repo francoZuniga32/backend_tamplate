@@ -6,6 +6,7 @@ require('dotenv').config();
 githubStrategy.prototype.tokenParams = function(options) {
     return options;
   };
+
 passport.use(new githubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,

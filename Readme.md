@@ -22,10 +22,9 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [x] Google
   - [x] Github
   - [ ] Distingir entre datos de usuario (nombre ,etc) y la estrategia usada
-- [ ] Envio de emails
-  - [ ] Template html.
-  - [ ] Validarion con email.
-  - [ ] Recuperacion de contraseña.
+- [x] Envio de emails
+  - [x] Envio de emails html
+  - [x] Envio de emails texto
 - [ ] Feature Flags - poder deshabilitar APIS en caso de que no se las requiera
   - [ ] Configurar un archivo json o .env para las diferentes funciones habilitadas-deshabilitadas.
 - [ ] Dockerfile para poder desplegarlo sensillamente
