@@ -5,8 +5,6 @@ module.exports = (sequelize, DataTypes) => {
   Usuarios.init(
     {
       nombreusuario: { type: DataTypes.STRING },
-      email: { type: DataTypes.STRING },
-      contrasenia: { type: DataTypes.STRING },
       foto: { type: DataTypes.STRING },
       rol: {type: DataTypes.STRING},
       token: {

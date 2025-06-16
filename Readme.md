@@ -17,17 +17,17 @@ Este proyecto pretende proponer un template simple de api rest simple de impleme
   - [x] Eliminacion
   - [x] Consulta
   - [x] Consulta N:1 N:M
-  - [ ] Documentacion de sequelize
-- [ ] OAUTH con otros servicios (google, facebook, etc)
+  - [/] Documentacion de sequelize
+- [x] OAUTH con otros servicios (google, facebook, etc)
   - [x] Google
   - [x] Github
-  - [ ] Distingir entre datos de usuario (nombre ,etc) y la estrategia usada
 - [x] Envio de emails
   - [x] Envio de emails html
   - [x] Envio de emails texto
+- [ ] Test unitarios
 - [ ] Feature Flags - poder deshabilitar APIS en caso de que no se las requiera
   - [ ] Configurar un archivo json o .env para las diferentes funciones habilitadas-deshabilitadas.
-- [ ] Dockerfile para poder desplegarlo sensillamente
+- [ ] Dockerfile para poder desplegarlo sencillamente
 - [ ] Dockercompose para poder levantar los servicios  
 
 No prometo tenerlo listo al corto plazo, pero si dedicarle tiempo para poder finalizarlo.
